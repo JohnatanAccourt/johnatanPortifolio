@@ -1,0 +1,44 @@
+.header__container{
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+    width: 100%;
+
+    padding: 10px 0px 10px 0px;
+
+    /* background-color: lightblue; */
+    background-color: rgba(red, green, blue, 0.9);
+}
+
+.header__wrapperLogo{
+    width: 60%;
+    padding-left: 70px;
+}
+
+.header__johl{
+    max-height: 70px;
+}
+
+.header__buttons{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 40%;
+    padding-right: 70px;
+}
+
+.header__button{
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+    font-size: 1.3rem;
+
+    color: #95C623;
+}
