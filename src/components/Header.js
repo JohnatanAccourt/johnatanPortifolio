@@ -6,7 +6,7 @@ export default function Header(){
     return(
         <header className="header__container">
             <div className="header__wrapperLogo">
-                <img className="header__johl" src={Johl} alt="logo"/>
+                <img className="header__logo" src={Johl} alt="logo"/>
             </div>
             <div className="header__buttons">
                 <buttom className="header__button">Sobre mim</buttom>

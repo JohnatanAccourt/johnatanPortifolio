@@ -1,0 +1,44 @@
+.projects__container{
+    width: 90vw;
+    margin: auto;
+}
+
+.projetcts__title{
+    margin: 0px;
+
+    padding: 30px 0px 30px 0px;
+
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: center;
+
+    user-select: none;
+    color: #EFE7DA;
+}
+
+.projects__projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 30px;
+}
+
+.projects__project{
+    width: 240px;
+    height: 45vh;
+
+    background-color: #75A700;
+}
+
+.projects__wrapperImage{
+    height: 80%;
+}
+
+.projects__wrapperText{
+    height: 20%;
+    background-color: #001B1C;
+}

@@ -4,3 +4,95 @@ body{
     background-color: #001B1C;
     overflow-x: hidden;
 }
+
+.App__badges{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    background-color: #0E4749;
+}
+
+.App__wrapperLines{
+    display: flex;
+    flex-direction: column;
+}
+.App__upLine1{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-color:  #95C623;
+}
+.App__upLine2{
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-color:  #002121;
+}
+
+.App__downLine1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-color:  #95C623;
+}
+.App__downLine2{
+    position: absolute;
+    bottom: 17px;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-color: #002121;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  #95C623; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #EFE7DA; 
+}
+
+
+@media (max-width: 990px){
+    .App__badges{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

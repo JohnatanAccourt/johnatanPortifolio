@@ -1,0 +1,60 @@
+.badge__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 22vw;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: #0E4749;
+}
+
+.badge__wrapperBadge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 250px;
+
+    margin-top: 20px;
+
+    border-radius: 200px;
+    background-color: #092324;
+}
+
+.badge__badge{
+    width: 150px;
+}
+
+.badge__name{
+    margin: 0;
+
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+
+    color: #95C623;
+    user-select: none;
+}
+
+.badge__desc{
+    margin-top: 10px;
+
+    font-family: 'roboto';
+    font-size: 1rem;
+    text-align: center;
+
+    color: #EFE7DA;
+    user-select: none;
+}
+
+@media (max-width: 990px){
+    .badge__wrapper{
+        padding: 0;
+        width: 80vw;
+    }
+}
