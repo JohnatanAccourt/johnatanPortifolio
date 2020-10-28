@@ -8,7 +8,7 @@ import About from './components/About';
 import Badge from './components/Badge';
 import Mention from './components/Mention';
 import Projects from './components/Projects';
-// import Contact from 'components/Contact';
+import Contact from './components/Contact';
 
 import front from './assets/badges/005-dashboard interface.svg';
 import mobile from './assets/badges/009-mobile app.svg';
@@ -17,6 +17,9 @@ import ui from './assets/badges/023-user interface.svg';
 
 import Pokedex from './assets/logos/pokemon.png'
 import fifacmo from './assets/logos/icon.png'
+import bth from './assets/logos/bth.svg'
+import covid from './assets/logos/covid.png'
+import erecycle from './assets/logos/erecycle.png'
 
 function App() {
   return (
@@ -66,10 +69,18 @@ function App() {
         <div className="projects__projects">
           <Projects name="React Pokedex" image={Pokedex}/>
           <Projects name="FIFACMO" image={fifacmo}/>
+          <Projects name="Be The Hero" image={bth}/>
+          <Projects name="Covid-19 Tracker" image={covid}/>
+          <Projects name="E-Recycle" image={erecycle}/>
+
+          <div className="fixFlexWrap"></div>
+          <div className="fixFlexWrap"></div>
+          <div className="fixFlexWrap"></div>
+          <div className="fixFlexWrap"></div>
         </div>
       </div>
 
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

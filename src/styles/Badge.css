@@ -27,6 +27,9 @@
 
 .badge__badge{
     width: 150px;
+
+    user-select: none;
+    pointer-events: none;
 }
 
 .badge__name{
