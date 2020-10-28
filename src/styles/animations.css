@@ -1,0 +1,45 @@
+@keyframes hueRotate{
+    from { filter: hue-rotate(0deg)}
+    to { filter: hue-rotate(360deg)}
+} 
+
+@keyframes showModal{
+    from {
+        height: 1vh;
+        width: 1vw;
+    }
+    to {
+        height: 90vh;
+        width: 75vw;
+    }
+}
+@media(max-width: 990px){
+    @keyframes showModal{
+        from {
+            height: 1vh;
+            width: 1vw;
+        }
+        to {
+            height: 97vh;
+            width: 80vw;
+        }
+    }
+}
+
+@keyframes modalShadow{
+    from {
+        box-shadow: -0px 0px 10px rgba(0, 0, 0, 0.0);
+    }
+    to {
+        box-shadow: -40px 35px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes modalImage{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

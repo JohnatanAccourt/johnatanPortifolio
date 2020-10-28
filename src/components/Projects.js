@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
+
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import CodeIcon from '@material-ui/icons/Code';
+
 import '../styles/Projects.css';
 
-export default function Projects({image, name}){
+export default function Projects({image, name, tecnologies, about, description, demo, repo, }){
     const [modal, setModal] = useState(false);
-    // const [modalContent, setModalContent] = useState({
-    //     primaryColor: '#0571FF',
-    //     secondaryColor: '#091B34',
-    //     projectName: name,
-    //     projectTecnologies: [],
-    //     about: '',
-    //     demo: '',
-    //     repo: ''
-    // });
-
-    // function itemClicked(name, image){
-    //     name === 'pokemon' ?
-    //     setModalContent()
-    // }
 
     return(
         <>
@@ -33,11 +23,41 @@ export default function Projects({image, name}){
             {modal === true ?
                 <div className="projects__modal">
                     <buttom className="projects__close" onClick={() => setModal(false)}>x</buttom>
-                    <div className="projects__modalImage">
-                        <img src="" alt=""/>
-                    </div>
-                    <div className="projects__modalDesc">
+                    <div className="projects__modalDescription">
+                        <h1 className="projects__modalTitle">{name}</h1>
 
+                        <div className="projects__modalTecnologies">
+                            {tecnologies.map((index, count) => {
+                                return (
+                                    <p key={count} className="projects__modalTecnologie">{index}</p>
+                                )
+                            })}
+                        </div>
+
+                        <h3 className="projects__modalAboutTitle">Sobre o projeto</h3>
+
+                        <p className="projects__modalAbout">
+                            {about}
+                        </p>
+
+                        <p className="projects__modalAbout">
+                            {description}
+                        </p>
+
+                        <div className="projects__modalLinks">
+                            <div className="projects__modalWrapperLink">
+                                <CodeIcon styles={{color: '#001B1C', fontSize: 10}} />
+                                <a className="projects__modalLink" href={demo}>Código</a>
+                            </div>
+
+                            <div className="projects__modalWrapperLink">
+                                <VisibilityIcon styles={{color: '#001B1C', fontSize: 10}} />
+                                <a className="projects__modalLink" href={demo}>Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projects__modalWrapperImage">
+                        <img className="projects__modalImage" src={image} alt="logo"/>
                     </div>
                 </div>
             :

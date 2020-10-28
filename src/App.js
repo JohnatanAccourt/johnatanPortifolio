@@ -15,11 +15,13 @@ import mobile from './assets/badges/009-mobile app.svg';
 import backend from './assets/badges/002-file backup.svg';
 import ui from './assets/badges/023-user interface.svg';
 
-import Pokedex from './assets/logos/pokemon.png'
-import fifacmo from './assets/logos/icon.png'
-import bth from './assets/logos/bth.svg'
-import covid from './assets/logos/covid.png'
-import erecycle from './assets/logos/erecycle.png'
+// import Pokedex from './assets/logos/pokemon.png'
+// import fifacmo from './assets/logos/icon.png'
+// import bth from './assets/logos/bth.svg'
+// import covid from './assets/logos/covid.png'
+// import erecycle from './assets/logos/erecycle.png'
+
+import projects from './consts/projects';
 
 function App() {
   return (
@@ -67,12 +69,21 @@ function App() {
       <div className="projects__container">
         <h4 className="projetcts__title">Projetos</h4>
         <div className="projects__projects">
-          <Projects name="React Pokedex" image={Pokedex}/>
-          <Projects name="FIFACMO" image={fifacmo}/>
-          <Projects name="Be The Hero" image={bth}/>
-          <Projects name="Covid-19 Tracker" image={covid}/>
-          <Projects name="E-Recycle" image={erecycle}/>
-
+          {projects.map((index, count) => {
+            return (
+              <Projects 
+                key={count} 
+                name={index.projectName} 
+                image={index.image}
+                tecnologies={index.projectTecnologies}
+                about={index.about}
+                description={index.description}
+                // demo={}
+                // repo={}
+              />
+            )
+          })
+          }
           <div className="fixFlexWrap"></div>
           <div className="fixFlexWrap"></div>
           <div className="fixFlexWrap"></div>

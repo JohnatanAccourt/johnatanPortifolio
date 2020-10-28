@@ -1,3 +1,5 @@
+@import './animations.css';
+
 .projects__container{
     width: 90vw;
     margin: auto;
@@ -101,30 +103,188 @@
     align-items: center;
 
     position: absolute;
-    height: 70vh;
-    width: 70vw;
+    height: 1vh;
+    width: 1vw;
 
     z-index: 10000000;
 
-    background-color: #75A700;
+    background-color: #0E4749;
+
+    /* box-shadow: -40px 35px 10px rgba(0, 0, 0, 0.2); */
+    animation: 
+    showModal 2s 0s forwards, 
+    modalShadow 2s 2s forwards;
 }
 
 .projects__close{
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 20px;
     
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'roboto';
+    font-weight: 900;
     font-size: 3rem;
     text-align: center;
 
-    color: #EFE7DA;
+    color: #95C623;
     user-select: none;
     cursor: pointer;
 }
 
-/* .projects__modalDesc{
-} */
+.projects__modalDescription{
+    width: 55%;
+    height: 100%;
+    background-color: #000F10;
+
+    overflow-x: scroll;
+
+}
+
+.projects__modalTitle{
+    width: 95%;
+    margin: 20px auto;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 2rem;
+    /* text-align: center; */
+
+    color: #EFE7DA;
+    user-select: none;
+}
+
+.projects__modalTecnologies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 3px 10px;
+}
+
+.projects__modalTecnologie{
+    margin: 3px 3px;
+    border-style: solid;
+    border-color: #95C623;
+    border-width: 1px;
+    padding: 5px 15px 5px 15px;
+    
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    
+    color: #EFE7DA;
+    opacity: 0.8;
+    filter: hue-rotate(350deg);
+
+    animation: hueRotate 9s 0s infinite;
+}
+
+.projects__modalAboutTitle{
+    width: 95%;
+    margin: 20px auto;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    color: #EFE7DA;
+}
+
+.projects__modalAbout{
+    width: 95%;
+    margin: 20px auto;
+
+    margin-bottom: 50px;
+
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+
+    color: #EFE7DA;
+}
+
+.projects__modalLinks{
+    width: 55%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: #000F10;
+
+}
+
+.projects__modalWrapperLink{
+    width: 100px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px 10px 5px 10px;
+
+    padding: 4px;
+    border-radius: 10px;
+
+    background-color: #95C623;
+    cursor: pointer;
+}
+
+.projects__modalLink{
+    margin-left: 5px;
+
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 0.9rem;
+
+    color: #001B1C;
+}
+
+.projects__modalWrapperImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45%;
+    height: 100%;
+    /* background-color: saddlebrown; */
+
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.projects__modalImage{
+    opacity: 0;
+    animation: modalImage 2s 1.8s forwards;
+}
+
+@media (max-width: 990px){
+    .projects__modal{
+        flex-direction: column-reverse;
+        /* top: 0px; */
+    }
+    .projects__modalDescription{
+        width: 100%;
+        height: 65%;
+        background-color: #000F10;
+    
+        overflow-x: scroll;
+    }
+
+    .projects__modalWrapperImage{
+        width: 100%;
+        height: 35%;
+    }
+
+    .projects__modalImage{
+        width: 200px;
+        height: 200px;
+    }
+}
+
 
 
 
