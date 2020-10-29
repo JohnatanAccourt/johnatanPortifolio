@@ -2,6 +2,9 @@ const projects = [
     {
         projectName: 'React Pokédex',
         projectTecnologies: [
+            "html",
+            "css",
+            "javascript",
             'React.js',
             'Expo',
             'React Native',
@@ -22,6 +25,9 @@ const projects = [
     {
         projectName: 'FIFACMO',
         projectTecnologies: [
+            "html",
+            "css",
+            "javascript",
             'Expo',
             'React Native',
             'React Navigation',
@@ -37,6 +43,7 @@ const projects = [
             "react-native-svg",
             "react-native-tiny-toast",
             "react-number-format",
+            "Node",
             "cors",
             "express",
             "mariadb",
@@ -48,7 +55,76 @@ const projects = [
         demo: false,
         repo: 'https://github.com/JohnatanAccourt/FIFACMO',
         image: 'https://raw.githubusercontent.com/JohnatanAccourt/johnatanPortifolio/master/src/assets/logos/icon.png'
+    },
+
+    {
+        projectName: 'Covid-19 Tracker',
+        projectTecnologies: [
+            "html",
+            "css",
+            "javascript",
+            "@material-ui/core",
+            "chart.js",
+            "leaflet",
+            "numeral",
+            "react"
+        ],
+        about: 'Esse projeto foi feito pelo canal Clever Programmer em live, então só foi uma cópia... particularmente eu não sou muito fan dessa prática de copiar outros projetos seguindo um passo a passo, mas devo reconhecer que ao início da minha carreira isso pode ser importante para ficar cada vez mais ligado no que há de novo no mercado e também para adquirir boas práticas e descobrir cada vez mais novos métodos e formas diferentes de fazer algo determinado.',
+
+        description: 'Tem a importância de mostrar os ocorridos de casos, mortes e recuperados da nova Covid-19 mostrando os principais países afetados, gráfico atualizado com o aclive/declive dos casos no mundo, filtro para escolher determinado país para ver mais expecificamente.',
+        demo: 'https://covid-19-tracker-c5c76.web.app/',
+        repo: 'https://github.com/JohnatanAccourt/Covid19Tracker',
+        image: 'https://raw.githubusercontent.com/JohnatanAccourt/johnatanPortifolio/master/src/assets/logos/covid.png'
+    },
+
+    {
+        projectName: 'Be The Hero',
+        projectTecnologies: [
+            "Html",
+            "css",
+            "javascript",
+            "Node",
+            "Nodemon",
+            "cors",
+            "express",
+            "knex",
+            "sqlite3",
+            "axios",
+            "react",
+            "react Native",
+            "axios",
+            "expo",
+            "expo-constants",
+            "expo-mail-composer",
+            "intl",
+        ],
+        about: 'Be The Hero me deu uma grande visão da stack que está sendo usada pelas maioria das empresas, após concluir a semana eu fiquei bem mais empolgado e ganhei confiança para poder realizar o FIFACMO eu usei o conhecimento que adquiri nessa semana e depois realizei um projeto totalmente novo, o Be The Hero é um projeto feito pelo pessoal da Rocket Seat que possui canal no youtube com diversos conteúdos contemporêneos sobre desenvovimento web a também mobile',
+
+        description: 'É um sistema web simples que permite com que as ONGs insira casos e um valor para ajudar, enquanto o usuário através do app pode entrar em contato com a ONG para realizar a doação ou através do Whatsapp ou então por e-mail.',
+        demo: false,
+        repo: 'https://github.com/JohnatanAccourt/Be-The-Hero_SemanaOmnistack-11.0',
+        image: 'https://raw.githubusercontent.com/JohnatanAccourt/johnatanPortifolio/89ba3e54a8e24ac7398d78f5851191bfe9a36b8a/src/assets/logos/bth.svg'
+    },
+
+    {
+        projectName: 'E-Recycle',
+        projectTecnologies: [
+            "Html",
+            "css",
+            "jQuery",
+            "PHP",
+            "bootstrap",
+            "MariaBD"
+        ],
+        about: 'E-Recycle é um projeto que foi desenvolvido no projeto integrador no Senac que é basicamente um TCC desenvolvendo um sistema Web, sistema C# e mobile de acordo com que você foi aprendido no curso em grupo. Esse projeto foi o primeiro projeto que eu desenvolvi e também o único em grupo com mais de 2 pessoas é um projeto incompleto pois a parte mobile não conecta com o banco então o aplicativo se tornou um guia para o usuário conhecer como fazer o descarte do lixo de forma correta, o sistema web foi a parte principal do projeto pois por lá você pode conhecer no que consiste a E-Recycle que basicamente o principal objetivo é alcançar o máximo de pessoas possíveis para que elas possam ter conciência do descarte de lixo eletrônico. Como disse anteriormente é o primeiro projeto feito então sempre quando olho para esse projeto vejo uma grande posibilidade de refaze-lo pois é bastante promissor muito por se tratar do nosso maior bem que é o meio ambiênte.',
+
+        description: 'Como dito acima esse projeto visa mostrar para os usuários como fazer o descarte do lixo eletrônico e para isso o sistema web possibilita com que haja um cadastro dos usuários e dos coletores e com o cadastro dos coletores ele é visto pelos usuários que por sua vez pode entrar em contato com algum deles e fazer o descarte através deles. O website também conta com artigos de como reaproveitar o lixo eletrônico e também artigos para ficar sempre por dentro do que está ocorrendo no mundo em relação a reciclagem.',
+        demo: false,
+        repo: 'https://github.com/JohnatanAccourt/E-Recycle',
+        image: 'https://raw.githubusercontent.com/JohnatanAccourt/johnatanPortifolio/master/src/assets/logos/erecycle.png'
     }
+
+    
 ]
 
 export default projects

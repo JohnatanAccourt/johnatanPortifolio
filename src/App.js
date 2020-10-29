@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/App.css';
 import './styles/Projects.css';
 
@@ -15,8 +15,8 @@ import mobile from './assets/badges/009-mobile app.svg';
 import backend from './assets/badges/002-file backup.svg';
 import ui from './assets/badges/023-user interface.svg';
 
-// import Pokedex from './assets/logos/pokemon.png'
-// import fifacmo from './assets/logos/icon.png'
+
+
 // import bth from './assets/logos/bth.svg'
 // import covid from './assets/logos/covid.png'
 // import erecycle from './assets/logos/erecycle.png'
@@ -24,9 +24,26 @@ import ui from './assets/badges/023-user interface.svg';
 import projects from './consts/projects';
 
 function App() {
+  const [header, setHeader] = useState(false)
+  
+  useEffect(() => {
+    window.addEventListener('scroll', changeHeader);
+    return () => window.removeEventListener('scroll', changeHeader);
+  }, [])
+
+  const changeHeader = () => {
+    const position = window.scrollY;
+    if(position >= 100){
+      setHeader(true)
+    }else{
+      setHeader(false)
+    }
+  }
+
+
   return (
     <div className="App">
-      <Header />
+      <Header scrolledHeader={header} />
       <MainSection />
       <About />
       <section className="App__badges">
@@ -66,7 +83,7 @@ function App() {
       </section>
       <Mention /> 
 
-      <div className="projects__container">
+      <div className="projects__container" id="Projects">
         <h4 className="projetcts__title">Projetos</h4>
         <div className="projects__projects">
           {projects.map((index, count) => {

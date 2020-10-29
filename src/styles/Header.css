@@ -11,20 +11,40 @@
     padding: 10px 0px 10px 0px;
 
     z-index: 10;
+    transition: 0.4s;
+}
+.header--container {
+    position: fixed;
 
-    /* background-color: lightblue; */
-    /* background-color: rgba(red, green, blue, 0.9); */
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+    width: 100%;
+    height: 7vh;
+
+    padding: 10px 0px 10px 0px;
+
+    z-index: 10;
+    background-color: rgba(0, 27, 28, 0.9);
+    transition: 0.4s;
 }
 
 .header__wrapperLogo{
     width: 60%;
     padding-left: 70px;
 
-    pointer-events: none;
+    user-select: none;
+    cursor: pointer;
 }
 
 .header__logo{
     max-height: 70px;
+    transition: 0.4s;
+}
+.header--logo{
+    max-height: 50px;
+    transition: 0.4s;
 }
 
 .header__buttons{
@@ -50,10 +70,30 @@
 
     transition: 1s;
 }
-
 .header__button:hover{
     font-style: normal;
     font-size: 1.5rem;
+    
+    color: #0E4749;
+    transition: 0.2s;
+}
+
+.header--button{
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+    font-size: 1.1rem;
+
+    color: #95C623;
+    user-select: none;
+
+    transition: 1s;
+}
+.header--button:hover{
+    font-style: normal;
+    font-size: 1.2rem;
     
     color: #0E4749;
     transition: 0.2s;

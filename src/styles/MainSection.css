@@ -94,3 +94,18 @@
         line-height: 5rem;
     }
 }
+
+@media (max-width: 500px){
+    .mainSection__introduction{
+        font-size: 1.5rem;
+    }
+    
+    .mainSection__name{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    
+    .mainSection__profession{
+        font-size: 1.5rem;
+    }
+}

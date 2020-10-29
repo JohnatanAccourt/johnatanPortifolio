@@ -5,7 +5,7 @@ import me from '../assets/me/me.png';
 
 export default function MainSection(){
     return(
-        <section className="mainSection__container">
+        <section className="mainSection__container" id='Main'>
             <div className="mainSection__johlImg">
                 <div className="mainSection__column">
                     <img className="mainSection__img" src={me} alt="Johnatan"/>

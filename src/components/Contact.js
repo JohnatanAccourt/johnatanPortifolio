@@ -52,7 +52,7 @@ export default function Contact(){
     }
 
     return(
-        <section className="contact__container">
+        <section className="contact__container" id='Contact'>
             <div className="projects__leftLines">
                 <div className="projects__leftLine1"></div>
                 <div className="projects__leftLine2"></div>

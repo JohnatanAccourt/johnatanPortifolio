@@ -52,6 +52,7 @@
 
 .mention__mention{
     width: 40vw;
+    padding: 50px;
 }
 
 .mention__title{
@@ -69,4 +70,16 @@
 
     color: #EFE7DA;
     user-select: none;
+}
+
+@media(max-width: 990px){
+    .mention__container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .mention__mention{
+        width: 80vw;
+    }
 }

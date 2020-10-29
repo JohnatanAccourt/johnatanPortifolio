@@ -9,8 +9,9 @@
         width: 1vw;
     }
     to {
-        height: 90vh;
+        height: 95vh;
         width: 75vw;
+        margin-bottom: 2%;
     }
 }
 @media(max-width: 990px){
@@ -20,7 +21,7 @@
             width: 1vw;
         }
         to {
-            height: 97vh;
+            height: 95vh;
             width: 80vw;
         }
     }
