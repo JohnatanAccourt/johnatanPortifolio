@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import CodeIcon from '@material-ui/icons/Code';
 
 import '../styles/Projects.css';
 
-export default function Projects({image, name, tecnologies, about, description, demo, repo, }){
+export default function Projects({image, name, tecnologies, about, description, demo, width, height, repo}){
     const [modal, setModal] = useState(false);
 
     return(
         <>
             <div className="projects__project" onClick={() => [setModal(true)] }>
                 <div className="projects__wrapperImage">
-                    <img className="projects__image" src={image} alt="project"/>
+                    <img className="projects__image" style={{width: `${width}`, height: `${height}`}} src={image} alt="project"/>
                 </div>
 
                 <div className="projects__wrapperText">
@@ -47,13 +47,16 @@ export default function Projects({image, name, tecnologies, about, description, 
                         <div className="projects__modalLinks">
                             <div className="projects__modalWrapperLink">
                                 <CodeIcon styles={{color: '#001B1C', fontSize: 10}} />
-                                <a className="projects__modalLink" href={demo}>Código</a>
+                                <a rel="noopener noreferrer" target='_blank' className="projects__modalLink" href={repo}>Código</a>
                             </div>
-
-                            <div className="projects__modalWrapperLink">
-                                <VisibilityIcon styles={{color: '#001B1C', fontSize: 10}} />
-                                <a className="projects__modalLink" href={demo}>Demo</a>
-                            </div>
+                            {demo ?
+                                <div className="projects__modalWrapperLink">
+                                    <VisibilityIcon styles={{color: '#001B1C', fontSize: 10}} />
+                                    <a rel="noopener noreferrer" target='_blank' className="projects__modalLink" href={demo}>Demo</a>
+                                </div>
+                            :
+                                <></>
+                            }
                         </div>
                     </div>
                     <div className="projects__modalWrapperImage">

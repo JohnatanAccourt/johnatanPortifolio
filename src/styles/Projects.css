@@ -110,10 +110,10 @@
 
     background-color: #0E4749;
 
-    /* box-shadow: -40px 35px 10px rgba(0, 0, 0, 0.2); */
     animation: 
     showModal 2s 0s forwards, 
     modalShadow 2s 2s forwards;
+    margin-top: 5%;
 }
 
 .projects__close{
@@ -234,12 +234,13 @@
 
 .projects__modalLink{
     margin-left: 5px;
-
+    
     font-family: 'Roboto';
     font-weight: 800;
     font-size: 0.9rem;
-
+    
     color: #001B1C;
+    text-decoration: none;
 }
 
 .projects__modalWrapperImage{
@@ -267,7 +268,8 @@
 @media (max-width: 990px){
     .projects__modal{
         flex-direction: column-reverse;
-        /* top: 0px; */
+        margin-top: 5%;
+
     }
     .projects__modalDescription{
         width: 100%;

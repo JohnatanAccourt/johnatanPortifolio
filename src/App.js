@@ -95,12 +95,15 @@ function App() {
                 tecnologies={index.projectTecnologies}
                 about={index.about}
                 description={index.description}
-                // demo={}
-                // repo={}
+                width={index.width}
+                height={index.height}
+                demo={index.demo}
+                repo={index.repo}
               />
             )
           })
           }
+          <div className="fixFlexWrap"></div>
           <div className="fixFlexWrap"></div>
           <div className="fixFlexWrap"></div>
           <div className="fixFlexWrap"></div>

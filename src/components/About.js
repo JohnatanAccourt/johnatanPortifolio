@@ -15,18 +15,18 @@ export default function About(){
                     <div className="about__rightLine2"></div>
                 </div>
 
-                <h2 className="about__title">Sobre Mim:</h2>
+                <h2 className="about__title">Um pouco sobre mim:</h2>
 
                 <h3 className="about__text">
-                    Falando de características pessoais, eu gosto muito de trabalhar em equipe e também de poder ajudar e também ser ajudado, gosto sempre de me desenvolver e não me dou por satisfeito pois acredito que sempre dá pra melhorar, tenho uma cobrança interna bem grande em ser cada vez melhor no dia-a-dia e ser pontual nos compromissos mesmo que tenha que me dedicar fora do horário de trabalho.
+                    Falando de características pessoais, eu gosto muito de trabalhar em equipe ajudando e sendo ajudando também, gosto sempre de melhorar a cada dia e não me dou por satisfeito pois sempre busco refatorar meus conhecimentos e buscar ser cada vez mais rápido no desenvolvimento, tenho uma cobrança interna bem grande em ser cada vez melhor no dia-a-dia e ser pontual nos compromissos mesmo que tenha que me dedicar fora do horário de trabalho para alcançar a plenitude do projeto.
                 </h3>
 
                 <h3 className="about__text about__separator">
-                    Tive meu primeiro contato com o desenvolvimento web através do curso que fiz no Senac Largo Treze(2018) que abriu minha mente e me deu um horizonte sobre tudo que há hoje na área da tecnologia, desde montagem de microcomputadores, configuração de redes e claro a parte de desenvolvimento.
+                    Tive meu primeiro contato com o desenvolvimento web através do curso que fiz no Senac Largo Treze(2018-2019) que abriu minha mente e me deu um horizonte sobre tudo que há hoje na área da tecnologia, desde montagem de microcomputadores, configuração de redes e claro a parte de desenvolvimento.
                 </h3>
 
                 <h3 className="about__text">
-                    Após o curso tive a convicção do que eu queria ser e busquei e continuo buscando conhecimento sobre desenvolvimento web principalmente sobre front-end e venho buscando uma oportunidade no mercado para mostrar que sou capaz de contribuir no crescimento e desenvolvimento para o mercado.
+                    Após o curso tive a convicção do que gostaria de fazer e venho buscando conhecimento sobre desenvolvimento web principalmente sobre Front-end pois ainda estou buscando uma oportunidade no mercado para mostrar que sou capaz de contribuir na composição do time e gerar valor.
                 </h3>
             </div>
         </section>

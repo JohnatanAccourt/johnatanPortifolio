@@ -33,6 +33,7 @@
 }
 
 .badge__name{
+    width: 95%;
     margin: 0;
 
     font-family: 'Franklin Gothic Medium';
@@ -45,6 +46,7 @@
 }
 
 .badge__desc{
+    width: 95%;
     margin-top: 10px;
 
     font-family: 'roboto';

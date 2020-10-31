@@ -74,14 +74,14 @@
 }
 
 .about__text{
-    width: 90%;
+    width: 80%;
 
     margin: 0px auto;
 
     /* padding: 30px 0px 30px 0px; */
 
     font-family: 'Roboto';
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     color: #EFE7DA;
     user-select: none;
