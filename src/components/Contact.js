@@ -86,6 +86,10 @@ export default function Contact(){
                 />
                 
                 <input className="contact__submit" type="submit" value="Enviar Mensagem"/>
+
+                <p className="contact__socialmidias">
+                    Visite também meu <a href="https://www.linkedin.com/in/johnatan-accourt-93937a19a/" rel="noopener noreferrer" target='_blank'>Linkedin</a> e meu <a href="https://github.com/JohnatanAccourt" rel="noopener noreferrer" target='_blank'>GitHub</a>
+                </p>
             </form>
 
             <div className="contact__messageBox" style={{backgroundColor: `${modal.color}`, display: `${modal.isShown}`}}>

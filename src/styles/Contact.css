@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     border-radius: 30px;
     padding: 7px;
@@ -97,7 +97,7 @@
 }
 
 .contact__submit{
-    margin-top: 60px;
+    margin-top: 35px;
     padding: 10px;
     
     font-family: 'Franklin Gothic Medium';
@@ -229,6 +229,22 @@ input[type='submit']{
     height: 100vh;
 
     background-color:  #95C623;
+}
+
+.contact__socialmidias{
+    margin-top: 40px;
+    
+    font-family: 'Roboto';
+    font-size: 1rem;
+    text-align: center;
+
+    color: #EFE7DA;
+    user-select: none;
+}
+
+.contact__socialmidias > a{
+    text-decoration: none;
+    color: chartreuse;
 }
 
 @media(max-width: 990px){
