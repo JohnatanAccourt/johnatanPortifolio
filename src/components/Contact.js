@@ -30,6 +30,7 @@ export default function Contact(){
                 messageTitle: 'Seu e-mail foi enviado',
                 messageDesc: 'Em breve estarei vendo sua mensagem :)'
             }))
+            e.target.reset();
         }, (error) => {
             setModal(prevState => ({
                 ...prevState.icon,
@@ -39,9 +40,8 @@ export default function Contact(){
                 messageTitle: 'Erro ao enviar E-mail',
                 messageDesc: 'Verifique os campos e tente novamente'
             }))
+            e.target.reset();
         });
-
-        e.target.reset();
     }
 
     function closeModal(){
@@ -88,7 +88,7 @@ export default function Contact(){
                 <input className="contact__submit" type="submit" value="Enviar Mensagem"/>
 
                 <p className="contact__socialmidias">
-                    Visite também meu <a href="https://www.linkedin.com/in/johnatan-accourt-93937a19a/" rel="noopener noreferrer" target='_blank'>Linkedin</a> e meu <a href="https://github.com/JohnatanAccourt" rel="noopener noreferrer" target='_blank'>GitHub</a>
+                    Visite meu <a href="https://www.linkedin.com/in/johnatan-accourt-93937a19a/" rel="noopener noreferrer" target='_blank'>LinkedIn</a> e também meu <a href="https://github.com/JohnatanAccourt" rel="noopener noreferrer" target='_blank'>GitHub</a>
                 </p>
             </form>
 

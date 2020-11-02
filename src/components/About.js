@@ -18,11 +18,11 @@ export default function About(){
                 <h2 className="about__title">Um pouco sobre mim:</h2>
 
                 <h3 className="about__text">
-                    Falando de características pessoais, eu gosto muito de trabalhar em equipe ajudando e sendo ajudando também, gosto sempre de melhorar a cada dia e não me dou por satisfeito pois sempre busco refatorar meus conhecimentos e buscar ser cada vez mais rápido no desenvolvimento, tenho uma cobrança interna bem grande em ser cada vez melhor no dia-a-dia e ser pontual nos compromissos mesmo que tenha que me dedicar fora do horário de trabalho para alcançar a plenitude do projeto.
+                    Falando de características pessoais, eu gosto muito de trabalhar em equipe trocando informações, idéias e adaptando à forma do time trabalhar, gosto sempre de melhorar a cada dia e não me dou por satisfeito pois sempre busco refatorar meus conhecimentos e buscar ser cada vez mais rápido no desenvolvimento, tenho uma cobrança interna bem grande em ser cada vez melhor no dia-a-dia e ser pontual nos compromissos mesmo que tenha que me dedicar fora do horário de trabalho para alcançar a plenitude do projeto.
                 </h3>
 
                 <h3 className="about__text about__separator">
-                    Tive meu primeiro contato com o desenvolvimento web através do curso que fiz no Senac Largo Treze(2018-2019) que abriu minha mente e me deu um horizonte sobre tudo que há hoje na área da tecnologia, desde montagem de microcomputadores, configuração de redes e claro a parte de desenvolvimento.
+                    Tive meu primeiro contato com o desenvolvimento web através do curso que fiz no Senac Largo Treze(2018-2019) chamado Técnico em Informática que abriu minha mente e me deu um horizonte sobre tudo que há hoje na área da tecnologia, desde montagem de microcomputadores, configuração de redes e claro a parte de desenvolvimento.
                 </h3>
 
                 <h3 className="about__text">
